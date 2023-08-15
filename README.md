@@ -14,11 +14,10 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-This is a Frontend mentor project. I made this just to practice the basics fully. I had to make a newsletter signup page that takes in the email and display's a success message. I added one extra feature of local storage; whereby I stored the email in an array and stored that array into local storage. 
+This is a front-end mentor project. I made this just to practice the basics fully. I had to make a newsletter signup page that takes in the email and display's a success message. I added one extra feature of local storage; whereby I stored the email in an array and stored that array into local storage. 
 
 ### The challenge
 
@@ -38,7 +37,7 @@ Users should be able to:
 
 ## My process
 
-The files provided by Frontend mentor were kinda confusing, so I created a sperate local repository and then added the builtin files along the way as I needed.
+The files provided by Frontend Mentor were kinda confusing, so I created a separate local repository and then added the built-in files along the way as I needed.
 
 ### Built with
 
@@ -56,11 +55,11 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-This is the absolute basic it can get for a frontend project. And thats why I have added local storage functionality. I still have to make it responsive and need to add the email validation. I am looking for correct method to do so that is used frequently accross most webapps.
+This is the absolute basic it can get for a front-end project. And that's why I have added local storage functionality. I still have to make it responsive and need to add the email validation. I am looking for the correct method to do so that is used frequently across most web apps.
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/) - Finding the specific answer to your question regarding the CSS propertites or their values, look no further than stackoverflow. 
+- [Example resource 1](https://stackoverflow.com/) - To find the specific answer to your question regarding the CSS properties or their values, look no further than Stackoverflow. 
 
 ## Author
 
