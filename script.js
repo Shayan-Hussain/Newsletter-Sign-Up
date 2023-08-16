@@ -47,6 +47,10 @@ form.addEventListener("submit", function(event) {
     display_success_dialog();
 });
 
+const mobile_submit = () => {
+    
+}
+
 const mobile = () => {
     let width = window.innerWidth;
 
@@ -55,27 +59,28 @@ const mobile = () => {
 
         main.innerHTML = "";
 
-        let mobile_screen = `<div class="dsply_flx_column bg_white cover_viewport wod">
+        let mobile_screen = `<div class="dsply_flx_column bg_white cover_viewport">
                             <div class="hero_img">
-                                <img src="/assets/illustration-sign-up-mobile-svg">
+                                <img src="/assets/illustration-sign-up-mobile.svg">
                             <div>
-                            <div class="form_heading pdng_10x0px">
-                                Stay updated!
-                            </div>
-                            <div>
-                                Join 60,000+ product managers receiving monthly updates on:
-                            </div> 
-                            <ul class="pdng_10x0px">
-                                <li>Product discovery and building what matters</li>
-                                <li>Measuring to ensure updates are a success</li>
-                            <li>And much more!</li>
-                            </ul> 
-                            <label for="email" class="lable">Email address</label>
-                            <div class="email_input mrgn_10x0px">
-                            <input type="email" name="email" class="br_round" id="email_input" placeholder="email@company.com" value="">
-                            </div>
-                            <button class="mrgn_10x0px br_round" id="submit_cta">Subscribe to monthly newsletter</button>`
-
+                            <div class="mobile_form">
+                                <div class="form_heading pdng_10x0px">
+                                    Stay updated!
+                                </div>
+                                <div>
+                                    Join 60,000+ product managers receiving monthly updates on:
+                                </div> 
+                                <ul class="pdng_10x0px">
+                                    <li>Product discovery and building what matters</li>
+                                    <li>Measuring to ensure updates are a success</li>
+                                <li>And much more!</li>
+                                </ul> 
+                                <label for="email" class="lable">Email address</label>
+                                <div class="email_input mrgn_10x0px">
+                                <input type="email" name="email" class="br_round" id="email_input" placeholder="email@company.com" value="">
+                                </div>
+                                <button class="mrgn_10x0px br_round" id="submit_cta" onclick="mobile_submit">Subscribe to monthly newsletter</button>
+                            </div>`
         main.innerHTML = mobile_screen;
 
         // console.log("true")
