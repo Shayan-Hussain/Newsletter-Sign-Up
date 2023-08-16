@@ -68,6 +68,16 @@ li {
 
 }
 
+.mobile_form {
+    padding: 10px 20px;
+}
+
+.mobile_success {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px ;
+}
+
 /* utility classes */
 
 .dsply_flx_itm_cntrd {

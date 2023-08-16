@@ -48,7 +48,22 @@ form.addEventListener("submit", function(event) {
 });
 
 const mobile_submit = () => {
-    
+
+    email_input = document.querySelector("#email_input")
+
+    let main = document.querySelector("main");
+
+    main.innerHTML = "";
+
+    let mobile_success = `<div class="mobile_success bg_white cover_viewport">
+                            <div><img src="/assets/icon-success.svg"></div>
+                            <div class="form_heading pdng_10x0px">Thanks for subscribing!</div>
+                            <div class="pdng_10x0px">A confirmation email has been sent to <div class="fnt_wgt_700 dis_inline">${email_input.value}.<div> Please open it and click the button inside to confirm your subscription.
+                            <button class="mrgn_tp_50px br_round" id="submit_cta" onclick="mobile()" >Dismiss message</button>
+                        </div>`
+
+    main.innerHTML = mobile_success;
+
 }
 
 const mobile = () => {
@@ -79,13 +94,12 @@ const mobile = () => {
                                 <div class="email_input mrgn_10x0px">
                                 <input type="email" name="email" class="br_round" id="email_input" placeholder="email@company.com" value="">
                                 </div>
-                                <button class="mrgn_10x0px br_round" id="submit_cta" onclick="mobile_submit">Subscribe to monthly newsletter</button>
+                                <button class="mrgn_10x0px br_round" id="submit_cta" onclick="mobile_submit()">Subscribe to monthly newsletter</button>
                             </div>`
         main.innerHTML = mobile_screen;
 
-        // console.log("true")
     }   else    {
-        console.log("false")
+        return;
     }
 }
 
