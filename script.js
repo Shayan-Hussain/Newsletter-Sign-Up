@@ -46,3 +46,42 @@ form.addEventListener("submit", function(event) {
     store_email();
     display_success_dialog();
 });
+
+const mobile = () => {
+    let width = window.innerWidth;
+
+    if (width <= 650) {
+        let main = document.querySelector("main");
+
+        main.innerHTML = "";
+
+        let mobile_screen = `<div class="dsply_flx_column bg_white cover_viewport wod">
+                            <div class="hero_img">
+                                <img src="/assets/illustration-sign-up-mobile-svg">
+                            <div>
+                            <div class="form_heading pdng_10x0px">
+                                Stay updated!
+                            </div>
+                            <div>
+                                Join 60,000+ product managers receiving monthly updates on:
+                            </div> 
+                            <ul class="pdng_10x0px">
+                                <li>Product discovery and building what matters</li>
+                                <li>Measuring to ensure updates are a success</li>
+                            <li>And much more!</li>
+                            </ul> 
+                            <label for="email" class="lable">Email address</label>
+                            <div class="email_input mrgn_10x0px">
+                            <input type="email" name="email" class="br_round" id="email_input" placeholder="email@company.com" value="">
+                            </div>
+                            <button class="mrgn_10x0px br_round" id="submit_cta">Subscribe to monthly newsletter</button>`
+
+        main.innerHTML = mobile_screen;
+
+        // console.log("true")
+    }   else    {
+        console.log("false")
+    }
+}
+
+mobile();
