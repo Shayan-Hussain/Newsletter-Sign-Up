@@ -59,7 +59,7 @@ This is the absolute basic it can get for a front-end project. And that's why I 
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/) - To find the specific answer to your question regarding the CSS properties or their values, look no further than Stackoverflow. 
+- [Stackoverflow](https://stackoverflow.com/) - To find the specific answer to your question regarding the CSS properties or their values, look no further than Stackoverflow. 
 
 ## Author
 
